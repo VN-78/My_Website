@@ -10,7 +10,7 @@ def home():
 
 @app.route('/resume')
 def resume():
-    return send_from_directory("static/Professional Resume")
+    return send_from_directory(directory='static' , path='My_Resume.pdf')
 
 
 
