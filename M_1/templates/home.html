@@ -3,61 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_Web</title>
+    <title>VN_78_Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-    <style>  
-
-h1{
-
-    color:  #999aa0;
-    font : size  50px; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-weight: bolder;
-    margin-left: 20px;
-}
-
-
-
-
-
-
-body {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-padding: 0;
-background-image: url('http://127.0.0.1:5000/static/Frog-Wall.jpg');
-background-size: cover;
-background-position: center  ;
-background-repeat: no-repeat;
-height: 100vh; /* Full viewport height */
-overflow: hidden; /* Prevents scrolling */
-box-sizing: border-box;
-background-color: black;
-
-}
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
+
+
 <body>
-    
-<title>  VN_78_Site   </title>  
+    <div class="full-screen-bg">
+        <img src="{{ url_for('static', filename='Frog-Wall.jpg') }}" alt="Frog Image">
+        <div class="text-content">
+            <h5>Hello,I'am</h5>
+            <h1>Vishwanath.S</h1>
+            <p>Software_Student @ R.I.T 
+                <br> # Python , # Java , # Data_Science </p>
 
-<h1> VN_78 </h1>
+            <p>_____________________________________________</p>
+            
+            <div class="buttons">
+                <button id="btn-1">Resume</button>
+                <button id="btn-2">Projects</button>
+                <button id="btn-3">Contact</button>
+            </div>
+        </div>
+    </div>
 
-<h2> Hello  </h2>   
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+          </div>
+        </nav>
+      </div>
 
-<p1 > 
-
-   <br> 𝓢𝓸𝓶𝓮 𝓹𝓸𝓲𝓷𝓽𝓼 𝓪𝓫𝓸𝓾𝓽 𝓶𝓮 <br>𝓜𝔂 𝓼𝓴𝓲𝓵𝓵𝓼 𝓪𝓻𝓮  <br> 𝓘𝓪𝓶 𝓪 𝓼𝓽𝓾𝓭𝓮𝓷𝓽 𝓪𝓽 𝓻𝓪𝓳𝓪𝓵𝓪𝓴𝓼𝓱𝓶𝓲 𝓬𝓸𝓵𝓵𝓮𝓰𝓮
-    
-</p1>
-
-
-
-
-
-
+   
+   
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

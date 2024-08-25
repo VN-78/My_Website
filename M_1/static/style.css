@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f9f9f9;
+    font-family:Montserrat;
+    overflow: hidden;
+    
+}
+
+::selection {
+    background: transparent; /* Removes the background color of the selected text */
+    color: inherit;          /* Keeps the text color unchanged */
+}
+
+
+.full-screen-bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.full-screen-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  
+}
+
+
+
+.text-content {
+    position:fixed;
+    right: 20%;
+    color: white;
+    text-align: center;
+    bottom: 40%;
+    cursor: default;
+    
+  
+    
+}
+
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 0px;
+    border-radius: 50% !important;
+    /* border: 1px solid #ffffff; */
+  
+    color: #000;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+#btn-1{
+background-color:#f2dfd3;
+border: 1px solid #e3ede7;
+}
+
+#btn-2{
+background-color:#c9b5c8;
+border: 1px solid #c9c9c9;
+}
+
+#btn-3{
+    background-color:#cdd9c8;
+    border: 1px solid #ccdeeb;
+}
+
+#btn-1:hover{
+    background-color: #dfcdcb;
+}
+
+#btn-2:hover{
+    background-color: #a690a9;
+}
+
+#btn-3:hover{
+    background-color: #b7beae;
+}
