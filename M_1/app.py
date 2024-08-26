@@ -12,6 +12,10 @@ def home():
 def resume():
     return send_from_directory(directory='static' , path='My_Resume.pdf')
 
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
 
 
 if __name__ == '__main__':

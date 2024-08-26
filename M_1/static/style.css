@@ -151,3 +151,24 @@ button {
 #btn-3:hover {
   background-color: #b7beae;
 }
+
+.nav-link-1{
+  display: inline-block;
+  padding: 7px 14px; /* Adjust padding as needed */
+  color: white;
+  background-color: #007BFF; /* Button background color */
+  text-align: center;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  margin: 7px;
+}
+
+.nav-link-1:hover{
+  background-color: #0056b3;
+}
+.nav-link-1:focus , .nav-link-1:active{
+  outline: none;
+}
