@@ -58,5 +58,17 @@ def register():
         return render_template('register.html')
 
 
+@app.route('/test_db', methods=['POST','GET'])
+def test_db():
+     try:
+          cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+          cursor.execute('SELECT 1')
+          data = cursor.fetchone()
+          cursor.close()
+          return "the connection os successfull DB:" + str(data)
+     except Exception as e:
+          return 'the error is :'+ str(e)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
