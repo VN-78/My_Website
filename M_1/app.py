@@ -65,7 +65,7 @@ def test_db():
           cursor.execute('SELECT 1')
           data = cursor.fetchone()
           cursor.close()
-          return "the connection os successfull DB:" + str(data)
+          return "the connection is  success_full DB:" + str(data)
      except Exception as e:
           return 'the error is :'+ str(e)
 
